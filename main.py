@@ -115,14 +115,14 @@ def __main__():
 
     # This is for testing multiple image
     for img in imgs:
-        img = img_pipeline(img, True)
+        img = img_pipeline(img, False)
         if type(img) is not None:
             plt.title("Final Image")
             plt.imshow(img, cmap='gray')
             plt.show()
 
-            # Video Processing -- Uncomment following line to process this on video
-            #video_processing("project_video.mp4","output-3-project-video.mp4")
+    # Video Processing -- Uncomment following line to process this on video
+    #video_processing("project_video.mp4","output-3-project-video.mp4")
 
 
 def video_processing(file_name, output_file_name=''):
